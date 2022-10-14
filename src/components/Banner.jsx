@@ -9,8 +9,8 @@ const [isDeleting, setIsDeleting] = useState(false);
 const [text, setText] = useState('');
 const [delta, setDelta] = useState(300 - Math.random() * 100);
 const [index, setIndex] = useState(1);
-const toRotate = ["Frontend Developer", "Web Developer", "FullStack Developer"];
-const period = 200;
+const toRotate = ["Frontend", "Backend", "FullStack"];
+const period = 2000;
 
 useEffect(() => {
     let ticker = setInterval(() => {
@@ -52,7 +52,7 @@ useEffect(() => {
                 <Col xs={12} md={6} xl={7}>
                     <h1>{`Hi, my name is Matias Duro`}
                     <br />
-                    <span className='wrap'>I'm a {text}</span></h1>
+                    <span className='wrap'>I'm a {text} Developer</span></h1>
                     <p>Lorem ipsum</p>
                     <button onClick={() => console.log('connect')}></button>
                 </Col>

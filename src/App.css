@@ -30,7 +30,10 @@ body{
   overflow-x: hidden;
   position: relative;
   background-color: #ffffff !important;
-  color: rgb(221, 156, 221) !important;
+  color: #fff4f4 !important;
+  -webkit-text-stroke: 1px rgb(12, 12, 14);
+  text-stroke: 1px navy;
+
   font-family: 'Centra', sans-serif !important;
 }
 
