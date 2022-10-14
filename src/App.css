@@ -31,8 +31,8 @@ body{
   position: relative;
   background-color: #ffffff !important;
   color: #fff4f4 !important;
+  font-size: rem;
   -webkit-text-stroke: 1px rgb(12, 12, 14);
-  text-stroke: 1px navy;
 
   font-family: 'Centra', sans-serif !important;
 }
@@ -238,6 +238,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 .banner .tagline {
   font-weight: 700;
@@ -298,4 +299,51 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+  background: linear-gradient(180deg, rgba(85,200,251,1) 0%, rgba(162,222,249,0.5214460784313726) 38%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+.bar{
+  width: 100vw;
+  height: 10px;
+  background-color: #121212;
+}
+.skill-bx {
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: 60px;
+  border: solid 2px skyblue;
+  background-image: url('./assets/img/clouds.png');
+
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill h5 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
 }
