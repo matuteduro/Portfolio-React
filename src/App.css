@@ -32,7 +32,6 @@ body{
   background-color: #ffffff !important;
   color: #fff4f4 !important;
   font-size: rem;
-  -webkit-text-stroke: 1px rgb(12, 12, 14);
 
   font-family: 'Centra', sans-serif !important;
 }
@@ -41,6 +40,7 @@ h1, h2, h3, h4, h5, h6{
   margin: 0;
   padding: 0;
   line-height: normal;
+
 }
 
 p, a, li, button, ul {
@@ -84,10 +84,11 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding:0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
+ -webkit-text-stroke: 1px rgb(12, 12, 14);
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
@@ -148,6 +149,7 @@ span.navbar-text {
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+.social-icons{}
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -233,14 +235,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
+  width: 100vw;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/clouds.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-color: linear-gradient(180deg, rgba(85,200,251,1) 0%, rgba(162,222,249,0.5214460784313726) 38%, rgba(255,255,255,1) 100%);
+  -webkit-text-stroke: 1px rgb(12, 12, 14);
 }
 .banner .tagline {
+  
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -307,6 +312,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(180deg, rgba(85,200,251,1) 0%, rgba(162,222,249,0.5214460784313726) 38%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
   background-size: cover;
+  -webkit-text-stroke: 1px rgb(12, 12, 14);
 }
 .bar{
   width: 100vw;
@@ -321,6 +327,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: solid 2px skyblue;
   background-image: url('./assets/img/clouds.png');
 
+}
+.skill-box{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  
 }
 .skill h2 {
 	font-size: 45px;
@@ -347,3 +361,219 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+
+.project {
+  padding: 80px 0;
+  position: relative;
+  background: linear-gradient(180deg, rgba(85,200,251,1) 0%, rgba(162,222,249,0.5214460784313726) 38%, rgba(255,255,255,1) 100%)
+
+}
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+  -webkit-text-stroke: 1px rgb(12, 12, 14);
+}
+.project p {
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+  border: 5px solid skyblue;
+  border-radius: 30px;
+}
+.project .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #4ec2fc -5.91%, #5bd1ff 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.project .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+.project .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #30cbfa -5.91%, #29a7f6 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+
+/************ Projects Css ************/
+.contact {
+  background-image: url('./assets/img/clouds.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+  -webkit-text-stroke: 1px rgb(12, 12, 14);
+
+  
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: rgb(4, 179, 254);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: rgb(125, 130, 131);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: rgb(35, 171, 234);
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+}
+.contact form button::before {
+  content: "";
+  background: #121212;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
+}
+
+.animate__fadeIn{
+  background-color: #f9f6f6;
+  border-radius: 20px;
+  border: 2px solid skyblue;
+  padding: 20px;
+
+}
+
