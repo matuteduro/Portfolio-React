@@ -1,7 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/StartUp.png";
-import projImg2 from "../assets/img/landing.png";
+import projImg2 from "../assets/img/ecommerce.png";
+import projImg3 from "../assets/img/landing.png";
+import projImg4 from "../assets/img/pokedex.png";
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react'
@@ -10,34 +13,34 @@ const Projects = () => {
 
   const project = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Start Up ",
+      description: "Start Up Design for Freelance Developer",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "E-Commerce MERN",
+      description: "Full E-ecommerce using MERN",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Landing Page",
+      description: "Landing Page Design",
+      imgUrl: projImg3,
+    },
+    {
+      title: "Pokedex React",
+      description: "Pokedex App using Fetch and React",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Todo-App React",
+      description: "Todo-App using React",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "",
+      description: "",
+      imgUrl: "",
     },
   ];
 
@@ -68,12 +71,6 @@ const Projects = () => {
                           })
                         }
                       </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
