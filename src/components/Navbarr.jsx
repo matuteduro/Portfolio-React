@@ -38,6 +38,7 @@ const Navbarr = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
@@ -47,7 +48,7 @@ const Navbarr = () => {
                 <a href="https://github.com/matuteduro" target='_blank'><img src={navIcon2} alt="" /></a>
                 <a href="https://api.whatsapp.com/send?phone=+5491130850984" target='_blank'><img src={navIcon3} alt=""  /></a>
               </div>
-              <button className="vvd"><span>Let’s Connect</span></button>
+              <a href="#contact"><button className="vvd"><span>Contact Me</span></button></a>
             </span>
           </Navbar.Collapse>
         </Container>

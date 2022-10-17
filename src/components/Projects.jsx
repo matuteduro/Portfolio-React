@@ -17,31 +17,37 @@ const Projects = () => {
       title: "Start Up ",
       description: "Start Up Design for Freelance Developer",
       imgUrl: projImg1,
+      url:"https://durodev-startup.vercel.app/",
     },
     {
       title: "E-Commerce MERN",
       description: "Full E-ecommerce using MERN",
       imgUrl: projImg2,
+      url:"https://durodev-mern-ecommerce.herokuapp.com/",
     },
     {
       title: "Landing Page",
       description: "Landing Page Design",
       imgUrl: projImg3,
+      url:"https://landingpage-one-rust.vercel.app/",
     },
     {
       title: "Pokedex React",
       description: "Pokedex App using Fetch and React",
       imgUrl: projImg4,
+      url:"https://pokedex-seven-green.vercel.app/",
     },
     {
       title: "Todo-App React",
       description: "Todo-App using React",
       imgUrl: projImg5,
+      url:"https://todo-app-wheat-beta.vercel.app/",
     },
     {
       title: "",
       description: "",
       imgUrl: "",
+      url:"",
     },
   ];
 
@@ -54,7 +60,7 @@ const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>This are a few projects I did, most of them are made using React, Node Js, MongoDb and I will be uploading more to showcase my knowledge</p>
+
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                   </Nav>

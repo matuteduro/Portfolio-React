@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/me2.png";
+import contactImg from "../assets/img/me3.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
@@ -28,7 +28,7 @@ const form = useRef();
     };
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
