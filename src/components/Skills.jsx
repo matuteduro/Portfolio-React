@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react';
 import html from "../assets/icons/html.png";
 import css from "../assets/icons/css.png";
 import javascript from "../assets/icons/javascript.png";
 import react from "../assets/icons/react.png";
-import git from '../assets/icons/git.png';
 import node from '../assets/icons/node.png';
 import redux from '../assets/icons/redux.png';
 import sass from '../assets/icons/sass.png';
 import bootstrap from '../assets/icons/bootstrap.png';
-import typescript from '../assets/icons/typescript.png';
-import express from '../assets/icons/express.png';
 import mongodb from '../assets/icons/mongodb.png';
 import next from '../assets/icons/nextjs.png';
-import php from '../assets/icons/php.png';
 import sql from '../assets/icons/sql.png';
 import tailwind from '../assets/icons/tailwind.png';
 import Carousel from 'react-multi-carousel';
@@ -42,7 +37,6 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-        <div className='bar'></div>
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -86,10 +80,6 @@ export const Skills = () => {
                                 <h5>Bootstrap</h5>
                             </div>
                             <div className="item">
-                                <img src={typescript} alt="Image" />
-                                <h5>Typescript</h5>
-                            </div>
-                            <div className="item">
                                 <img src={node} alt="Image" />
                                 <h5>Node JS</h5>
                             </div>
@@ -100,10 +90,6 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={mongodb} alt="Image" />
                                 <h5>MongoDB</h5>
-                            </div>
-                            <div className="item">
-                                <img src={php} alt="Image" />
-                                <h5>PHP</h5>
                             </div>
                         </Carousel>
                     </div>

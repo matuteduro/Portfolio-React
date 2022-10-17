@@ -53,7 +53,6 @@ useEffect(() => {
                     <h1>{`Hi, my name is Matias Duro`}
                     <br />
                     <span className='wrap'>I'm a {text} Developer</span></h1>
-                    <p>Lorem ipsum</p>
                     <button onClick={() => console.log('connect')}></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
