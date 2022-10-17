@@ -4,6 +4,7 @@ import projImg1 from "../assets/img/StartUp.png";
 import projImg2 from "../assets/img/ecommerce.png";
 import projImg3 from "../assets/img/landing.png";
 import projImg4 from "../assets/img/pokedex.png";
+import projImg5 from "../assets/img/todo-app.png";
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -35,7 +36,7 @@ const Projects = () => {
     {
       title: "Todo-App React",
       description: "Todo-App using React",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
       title: "",
